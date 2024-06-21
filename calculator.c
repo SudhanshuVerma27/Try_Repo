@@ -3,9 +3,10 @@
 
 int main()
 	{
-	int a,b,choice,r;
+	int a,b,choice,r,ch;
 	printf("Enter two number\n");
 	scanf("%d%d",&a,&b);
+	do{
 	printf("\n Enter Choice : \n 1.Add \n 2.Subtract \n 3. multiply \n 4.Divide \n 5.Bitwise AND \n 6.Bitwise OR \n 7.Bitwise XOR\n");
 	scanf("%d" , &choice);
 	switch(choice){
@@ -25,5 +26,8 @@ int main()
                          break;
 
 	}
+	printf("Do you want to continue ");
+	scanf("%d" , &ch);
+	}while(ch == 1 );
 	return 0;
 	}
