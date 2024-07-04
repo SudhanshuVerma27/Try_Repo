@@ -7,13 +7,13 @@ void rm(char *str)
     int j=0;
     for(i=0 ; i<l ; i++)
     {
-        if(strcmp(str[i] , str[i+1]) == -1)
+        if(str[i] - str[i+1] != -1)
         {
             str[j++] = str[i];
         }
         else
         {
-            while(str[i] == str[i+1])
+            while(str[i] - str[i+1] == -1)
             {
                 i++;
             }
